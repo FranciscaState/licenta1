@@ -1,0 +1,228 @@
+<div class="body"></div>
+<div class="grad"></div>
+<div class="header">
+    <div>Autentificare</div>
+</div>
+<br>
+
+
+<div class="container">
+
+    <div>
+        <form method='POST'>
+            <input placeholder="Email" type='text' class="input-medium search-query" name='email'/></br></br>
+            <input placeholder="Parola"  type='password' class="input-medium search-query" name='parola' id='myInput'/><input type="checkbox" onclick="myFunction2()">Vezi parola</br></br>
+            <input type='submit' class="btn btn-sm btn-primary" value='Autentificare' /></br></br>
+            <input type=button onClick="location.href='cont_nou.html'" value='Creare cont nou'/></br></br>
+            <p ondblclick="myFunction()">Ai uitat parola?</p>
+
+
+            <p id="demo"></p>
+
+            <script>
+                function myFunction() {
+                    document.getElementById("demo").innerHTML = "Hello World";
+
+                }
+
+                function myFunction2() {
+                    var x = document.getElementById("myInput");
+                    if (x.type === "password") {
+                        x.type = "text";
+                    } else {
+                        x.type = "password";
+                    }
+                }
+            </script>
+
+
+
+        </form>
+    </div>
+</div>
+
+<br></br>
+
+
+<style>
+        ts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+
+        @import url(https://fonts.googleapis.com/css?family=Exo:100,200,400);
+        @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+
+        body{
+        margin: 0;
+        padding: 0;
+        background: #fff;
+
+        color: #008000;
+        font-family: Arial;
+        font-size: 12px;
+        }
+
+        .body{
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        right: -40px;
+        bottom: -40px;
+        width: auto;
+        height: auto;
+        background-image: url(https://accuware.com/blog/wp-content/uploads/2015/03/queue-of-abstract-people-on-white.jpg);
+        background-size: cover;
+        -webkit-filter: blur(5px);
+        z-index: 0;
+        }
+
+        .grad{
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        right: -40px;
+        bottom: -40px;
+        width: auto;
+        height: auto;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+        z-index: 1;
+        opacity: 0.7;
+        }
+
+        .header{
+        position: absolute;
+        top: calc(50% - 35px);
+        left: calc(50% - 255px);
+        z-index: 2;
+        }
+
+        .header div{
+        float: left;
+        color: #0c5460;
+        font-family: 'Exo', sans-serif;
+        font-size: 35px;
+        font-weight: 200;
+        }
+
+        .header div span{
+        color: #5379fa !important;
+        }
+
+
+        .container{
+        position: absolute;
+        top: calc(50% - 75px);
+        left: calc(50% - 50px);
+        height: 150px;
+        width: 350px;
+        padding: 10px;
+        z-index: 2;
+        }
+
+        .container input[type=text]{
+        width: 250px;
+        height: 30px;
+        background: transparent;
+        border: 1px solid #0c5460;
+        border-radius: 2px;
+        color: #000000;
+        font-family: 'Exo', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 4px;
+
+        }
+
+        .container input[type ="password"]{
+            width: 250px;
+            height: 30px;
+            background: transparent;
+            border: 1px solid #0c5460;
+            border-radius: 2px;
+            color: #000000;
+            font-family: 'Exo', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            padding: 4px;
+        }
+
+        .container input[type=submit]{
+        width: 260px;
+        height: 35px;
+        background: #0c5460;
+        border: 1px solid #0c5460;
+        cursor: pointer;
+        border-radius: 2px;
+        color: #9fcdff;
+        font-family: 'Exo', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 6px;
+        margin-top: 10px;
+            text-align: center;
+        }
+
+        .container input[type=submit]:hover{
+        opacity: 0.8;
+        }
+
+        .container input[type=submit]:active{
+        opacity: 0.6;
+        }
+
+        .container input[type= button]{
+            width: 260px;
+            height: 35px;
+            background: #0c5460;
+            border: 1px solid #0c5460;
+            cursor: pointer;
+            border-radius: 2px;
+            color: #9fcdff;
+            font-family: 'Exo', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            padding: 6px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .container input[type=button]:hover{
+            opacity: 0.8;
+        }
+
+        .container input[type=button]:active{
+            opacity: 0.6;
+        }
+
+        .container input[type=text]:focus{
+        outline: none;
+        border: 1px solid rgba(255,255,255,0.9);
+        }
+
+        .container input[type = "password"]:focus{
+        outline: none;
+        border: 1px solid rgba(255,255,255,0.9);
+        }
+
+        .container input[type=submit]:focus{
+        outline: none;
+        }
+
+        ::-webkit-input-placeholder{
+        color: #000000;
+        }
+
+        ::-moz-input-placeholder{
+        color: #000000;
+        }
+        ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #0c5460;
+            opacity: 1; /* Firefox */
+        }
+
+        .opera input[type="password"],
+        .webkit input[type="password"]
+        {
+        font: large Verdana,sans-serif;
+        letter-spacing: 1px;
+        }
+
+</style >
